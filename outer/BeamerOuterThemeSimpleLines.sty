@@ -24,37 +24,9 @@
 
 \defbeamertemplate*{note page}{simplelines theme}
 {%
-	{%
-		\scriptsize
-		\insertvrule{.5\paperheight}{white!90!black}
-		\vskip-.5\paperheight
-		\nointerlineskip
-		\vbox{
-			\hspace*{.5\paperwidth}\hspace*{-1cm}\insertslideintonotes{0.5}%
-			\vskip-0.5\paperheight%
-			\nointerlineskip}
-		\nointerlineskip
-		\vbox to .5\paperheight{\vskip0.5em
-			\hbox{\insertsection}%
-			\setbox\beamer@tempbox=\hbox{\insertsubsection}%
-			\hbox{\ifdim\wd\beamer@tempbox>1pt{\hskip1.4pt\raise3pt\hbox{\vrule
-						width0.4pt height7pt\vrule width 9pt
-						height0.4pt}}\hskip1pt\hbox{\begin{minipage}[t]{7.5cm}\def\breakhere{}\insertsubsection\end{minipage}}\fi%
-			}%
-			\setbox\beamer@tempbox=\hbox{\insertshortframetitle}%
-			\hbox{\ifdim\wd\beamer@tempbox>1pt{\hskip13.8pt\raise3pt\hbox{\vrule
-						width0.4pt height7pt\vrule width 9pt
-						height0.4pt}}\hskip1pt\hbox{\insertshortframetitle[width=7cm]}\fi%
-			}%
-			\vfil}%
-	}%
-	\vskip.25em
-	\nointerlineskip%
-	{%
-		\scriptsize
-		\setlength{\parskip}{.8em}
-		\insertnote
-	}%
+	\large
+	\setlength{\parskip}{.8em}
+	\insertnote
 }
 
 \mode
